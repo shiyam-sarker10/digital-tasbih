@@ -31,7 +31,7 @@ subhanallahDecri.addEventListener('click', function(){
 let alhamdulilahInValue = 0;
 alhamdulilahIncri.addEventListener("click", function () {
     if (alhamdulilahInValue == 33) {
-      return alert(" subhanallah is finish go to next tasbih");
+      return alert(" alhamdulilah is finish go to next tasbih");
     }
   alhamdulilahInValue++;
 alhamdulilahDisplay.innerText = alhamdulilahInValue;
@@ -45,6 +45,36 @@ alhamdulilahDecri.addEventListener("click", function () {
       alhamdulilahDisplay.innerText = alhamdulilahInValue;
     
 });
+
+
+
 let allahuakberInValue = 0;
+allahuakberIncri.addEventListener("click", function () {
+    if (allahuakberInValue == 33) {
+      return alert(" allahuakber count is finish ");
+    }
+  allahuakberInValue++;
+allahuakberDisplay.innerText = allahuakberInValue;
+  
+});
+allahuakberDecri.addEventListener("click", function () {
+  if (allahuakberInValue == 0) {
+    return alert("the count is on zero please click on increment button");
+  }
+  allahuakberInValue--;
+  allahuakberDisplay.innerText = allahuakberInValue;
+});
+
+resetBtn.addEventListener('click', function(){
+    alhamdulilahInValue = 0;
+    alhamdulilahDisplay.innerText = alhamdulilahInValue;
+    
+    subhanallahInValue = 0;
+    subhanallahDisplay.innerText = subhanallahInValue;
+    
+    allahuakberInValue = 0;
+    allahuakberDisplay.innerText = allahuakberInValue;
+
+})
 
 
