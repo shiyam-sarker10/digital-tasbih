@@ -12,7 +12,7 @@ function increment(target) {
 function decrement(target) {
   const name = target.parentNode.parentNode.childNodes[1].innerText;
   if (initial <= 0) {
-    return alert("You please click on increment and start you todays tasbih");
+    return alert("Please click on increment and start you todays tasbih");
   }
   initial--;
   const count = (target.parentNode.parentNode.childNodes[3].innerText =
