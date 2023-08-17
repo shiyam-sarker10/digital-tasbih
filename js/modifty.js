@@ -18,4 +18,19 @@ function decrement(target) {
   const count = (target.parentNode.parentNode.childNodes[3].innerText =
     initial);
 }
+
+function reset(target) {
+  function childNumber(number) {
+    const resetItem = (target.parentNode.parentNode.childNodes[5].childNodes[
+      number
+    ].childNodes[3].innerText = initial);
+    return resetItem;
+  }
+  initial = 0;
+  const resetItem = childNumber(1);
+
+  const resetItem1 = childNumber(5);
+
+  const resetItem2 = childNumber(9);
+}
 // modified version
