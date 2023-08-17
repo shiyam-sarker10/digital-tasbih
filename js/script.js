@@ -1,3 +1,7 @@
+// older version 
+
+
+
 const subhanallahDisplay = document.getElementById("subhanallahDisplay");
 const subhanallahIncri = document.getElementById("subhanallahIncri");
 const subhanallahDecri = document.getElementById("subhanallahDecri");
@@ -11,7 +15,7 @@ const resetBtn = document.getElementById("resetBtn");
 let subhanallahInValue = 0;
 subhanallahIncri.addEventListener('click', function(){
         if (subhanallahInValue == 33) {
-          alert(" subhanallah is finish go to next tasbih");
+          return alert(" subhanallah is finish go to next tasbih");
         }
     subhanallahInValue ++;
     subhanallahDisplay.innerText = subhanallahInValue;
